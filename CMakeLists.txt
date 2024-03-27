@@ -1,8 +1,6 @@
 cmake_minimum_required(VERSION 3.25)
+project(linkIt)
 
-project(linkIT)
-set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
+include(cmake/CommonProperties.cmake)
 
-add_library(linkIT SHARED src/signal.cpp)
-
-target_include_directories(linkIT PUBLIC include)
+add_subdirectory(src)
