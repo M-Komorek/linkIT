@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.25)
-project(linkIt)
+project(linkit)
 
 include(cmake/CommonProperties.cmake)
 

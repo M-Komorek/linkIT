@@ -1,8 +1,8 @@
-#include "link_it/signal.hpp"
+#include "linkit/signal.hpp"
 
 #include <utility>
 
-namespace link_it {
+namespace linkit {
 
 template <typename... Args>
 template <typename Slot>
@@ -17,4 +17,4 @@ auto Signal<Args...>::emit(Args &&...args) const -> void {
   }
 }
 
-} // namespace link_it
+} // namespace linkit

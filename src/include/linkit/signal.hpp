@@ -2,7 +2,7 @@
 
 #include <functional>
 
-namespace link_it {
+namespace linkit {
 
 template <typename... Args> class Signal {
 public:
@@ -13,4 +13,4 @@ private:
   std::vector<std::function<void(Args...)>> connections_;
 };
 
-} // namespace link_it
+} // namespace linkit
