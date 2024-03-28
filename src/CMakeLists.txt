@@ -1,9 +1,3 @@
-add_library(linkit 
-  SHARED 
-    signal.cpp
-)
+add_library(linkit INTERFACE)
 
-target_include_directories(linkit 
-  PUBLIC 
-    ${CMAKE_CURRENT_LIST_DIR}/include
-)
+target_include_directories(linkit INTERFACE ${CMAKE_CURRENT_LIST_DIR}/include)

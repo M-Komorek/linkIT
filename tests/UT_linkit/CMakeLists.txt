@@ -5,6 +5,7 @@ add_executable(UT_linkit
 target_link_libraries(UT_linkit
   PRIVATE
     gtest_main
+    linkit
 )
 
 target_include_directories(UT_linkit
