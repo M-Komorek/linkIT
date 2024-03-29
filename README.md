@@ -22,6 +22,9 @@ auto main() -> int {
     return 0;
 }
 ```
+``` bash
+Received value: 42
+```
 
 ## Compiling the Library and Running Tests
 To compile the library, follow these steps:
@@ -92,4 +95,11 @@ auto main() -> int {
 
     return 0;
 }
+```
+``` bash
+Heater: Heating room to 19.3 degrees.
+Heater: Heating room to 19.6 degrees.
+Heater: Heating room to 20.7 degrees.
+Heater: Heating room to 20.5 degrees.
+Heater: Heating room to 20.3 degrees.
 ```
