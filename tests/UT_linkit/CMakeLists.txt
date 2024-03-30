@@ -8,9 +8,4 @@ target_link_libraries(UT_linkit
     linkit
 )
 
-target_include_directories(UT_linkit
-  PRIVATE
-    ${CMAKE_SOURCE_DIR}/src/include
-)
-
 add_test(NAME UT_linkit COMMAND UT_linkit)
