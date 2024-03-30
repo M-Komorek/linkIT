@@ -25,6 +25,8 @@ public:
     }
   }
 
+  auto disconnect() -> void { this->connections_.clear(); }
+
 private:
   std::vector<std::function<void(Args...)>> connections_;
 };

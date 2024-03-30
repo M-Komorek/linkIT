@@ -48,4 +48,19 @@ TEST(SignalTest, connectDifferentTypesWithSingleSignal) {
   EXPECT_EQ(stringArg, "Hello");
 }
 
+TEST(SignalTest, disconnectAllSlots) {
+  auto count = int{0};
+
+  auto signal = Signal<int>{};
+  signal.connect([&count](const auto x) { count += x; });
+  signal.connect([&count](const auto x) { count += x; });
+
+  signal.emit(10);
+  EXPECT_EQ(count, 20);
+
+  signal.disconnect();
+  signal.emit(10);
+  EXPECT_EQ(count, 20);
+}
+
 } // namespace linkit
